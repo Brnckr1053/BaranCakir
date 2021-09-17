@@ -1,0 +1,36 @@
+.row{
+    display: flex;
+
+    
+    
+}
+
+
+.col{
+    flex: 2;
+    background-color: coral;
+    padding: 5px;
+    margin: 20px;
+}
+
+.col-2{
+    flex: 2;
+    background-color: coral;
+    padding: 60px;
+    margin: 20px;
+
+}
+
+
+
+.col-3{
+    flex: 2;
+    background-color: coral;
+    padding: 180px;
+    margin: 20px;
+
+
+}
+
+
+
