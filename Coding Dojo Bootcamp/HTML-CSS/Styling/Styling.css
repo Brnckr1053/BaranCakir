@@ -1,0 +1,34 @@
+.backround{
+    background-color: white;
+}
+
+h1{
+    background-color: black;
+    opacity: 3;
+    padding-left: 50px;
+    font-family: cursive;
+    color:white
+    
+    }
+
+
+h2{
+    background-color: purple;
+    opacity: 0.8;
+    font-family: cursive;
+    font-weight: normal;
+    font-style: italic;
+    color: white;
+    text-align: center;
+    margin-top: -15px;
+}
+
+h3{
+    background-color: steelblue;
+    padding-left: 1750px;
+    font-family: cursive;
+    font-weight: inherit;
+    text-decoration: underline;
+    color: rgb(28, 23, 59);
+    margin-top: -12px;
+}
