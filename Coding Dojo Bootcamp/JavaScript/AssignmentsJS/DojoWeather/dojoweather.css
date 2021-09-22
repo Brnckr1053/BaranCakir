@@ -1,0 +1,200 @@
+*{
+    font-family: cursive;
+}
+
+.nav{
+    background-color: rgb(159,197,248);
+    height: 80px;
+}
+
+.navbar{
+    width: 900px;
+    height: 80px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#title{
+    color: white;
+}
+
+.cities{
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#burbank{
+    color: white;
+}
+
+#burbank:hover{
+	background-color:#00b7ff;
+    cursor: pointer;
+}
+
+#chicago{
+    color: white;
+}
+
+#chicago:hover{
+	background-color:#00b7ff;
+    cursor: pointer;
+}
+
+#dallas{
+    color: white;
+}
+
+#dallas:hover{
+	background-color:#00b7ff;
+    cursor: pointer;
+}
+
+.container{
+    width: 900px;
+    margin: auto;
+}
+
+.location{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid black;
+    margin-bottom: 25px;
+}
+
+#temprature{
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#tempbtn{
+    height: 30px;
+    width: 50px;
+}
+
+.days{
+    display: flex;
+    justify-content: space-between;
+}
+
+.days img{
+    width: 125px;
+    height: 125px;
+    border: 5px white;
+    border-radius: 50%;
+}
+
+.numbers{
+    display: flex;
+    justify-content: space-between;
+    width: 125px;
+}
+
+.today{
+    background-color: rgb(238,238,238);
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tomorrow{
+    background-color: rgb(238,238,238);
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.friday{
+    background-color: rgb(238,238,238);
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.saturday{
+    background-color: rgb(238,238,238);
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#red1{
+    color: red;
+}
+
+#blue1{
+    color: blue;
+}
+
+#red2{
+    color: red;
+}
+
+#blue2{
+    color: blue;
+}
+
+#red3{
+    color: red;
+}
+
+#blue3{
+    color: blue;
+}
+
+#red4{
+    color: red;
+}
+
+#blue4{
+    color: blue;
+}
+
+.cookie{
+    background-color: rgb(238,238,238);
+    height: 125px;
+    width: 900px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 4px solid black;
+    margin-top: 10px;
+    position: fixed;
+    
+}
+.cookie img{
+    height: 64px;
+    width: 64px;
+}
+
+#accept{
+    background-color: cadetblue;
+    width: 120px;
+    height: 40px;
+    box-shadow: 5px 5px black;
+}
+
+#accept:hover{
+	background-color:#00b7ff;
+    cursor: pointer;
+}
+
+
+.part{
+    height: 125px;
+    width: 600px;
+}
