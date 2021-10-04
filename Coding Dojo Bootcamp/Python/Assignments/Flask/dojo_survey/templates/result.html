@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Survey</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div id="containerresult">
+        <h1> Info Submitted:</h1>
+        <h4>Name:  {{session['name'] }}</h4>
+        <h4>Dojo Location:  {{session['location'] }}</h4>
+        <h4>Favorite Language:  {{session['language'] }}</h4>
+        <h4>Comments:  {{session['comment'] }}</h4>
+        <form action="/">
+            <button type="submit" id ="button" class="btn btn-light">Go Back</button>
+        </form>  
+    </div>
+</body>
+</html>

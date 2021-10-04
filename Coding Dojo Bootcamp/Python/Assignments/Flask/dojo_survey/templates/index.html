@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Survey</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div id="container">
+        <h1>Dojo Survey</h1>
+        <form id="formsurvey" action='/result' method='post'>
+            <div class="indexform">
+                <label for="name" value="{{session['name']}}">Name:</label>
+                <input type="text" name="name" class="form-name" id="name">
+            </div>
+            <div class="forms">
+                <label for="Selectcity">Dojo Location:</label>
+                <select class="formcontrol" id="Selectcity" name="location" form="formsurvey" required>
+                    <option hidden>-- Select city -- </option>
+                    <option value="Chicago">Chicago</option>
+                    <option value="Online">Online</option>
+                    <option value="Seattle">Seattle</option>
+                    <option value="Burbank">Burbank</option>
+                    <option value="Belleuve">Belleuve</option>
+                </select>
+            </div>
+            <div class="forms">
+                <label for="Selectlanguage">Favorite Language:</label>
+                <select class="formcontrol" id="Selectlanguage" name="language" form="formsurvey" required>
+                    <option>-- Select language -- </option>
+                    <option value="HTML">HTML</option>
+                    <option value="Cx">C#</option>
+                    <option value="CSS">CSS</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="Python">Python</option>
+                </select>
+            </div>
+            <div class="forms">
+                <label for="Textarea">Comments (optional):</label>
+                <textarea class="form-control" name="comment" form="formsurvey" id="textarea" rows="7" value="{{session['comment']}}"></textarea>
+            </div>
+            <button type="submit" id ="button" class="btn btn-light">Submit</button>      
+        </form>
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for message in messages %}
+                    <p>{{message}}</p>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+    </div>
+</body>
+</html>
