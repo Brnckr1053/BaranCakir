@@ -1,0 +1,10 @@
+INSERT INTO dojos (name)
+VALUES
+("dojo1"),
+("dojo2"),
+("dojo3");
+
+SELECT * FROM dojos;
+
+DELETE FROM dojos
+WHERE id
