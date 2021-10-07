@@ -1,0 +1,6 @@
+SELECT * FROM users;
+INSERT INTO users (first_name, last_name, email)
+VALUES
+("Pistachio", "Cat", "pistachio@cat.com"),
+("Cici", "Bird", "cici@bird.com"),
+("Baran", "Cakir", "baran@cakir.com")
