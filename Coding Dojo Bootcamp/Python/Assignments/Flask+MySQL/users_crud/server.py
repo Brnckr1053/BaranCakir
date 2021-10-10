@@ -26,12 +26,9 @@ def create():
 @app.route("/show/<int:id>", methods=["GET", "POST"])
 def show(id):
     data = {
-        "first_name": request.form["first_name"],
-        "last_name": request.form["last_name"],
-        "email": request.form["email"],
         "id":id
     }
-    user = User.show_user(data)
+    user = User.get_user(data)
     return render_template("show.html", user = user)
 
 @app.route("/edit/<int:id>")
