@@ -9,6 +9,18 @@ class User:
         self.created_at = data["created_at"]
         self.updated_at = data["updated_at"]
         
+    def full_name(self):
+            return f"{self.first_name} {self.last_name}"
+
+        def email_info(self):
+            return f"{self.email}"
+
+        def createdat(self):
+            return f"{self.created_at}"
+
+        def updatedat(self):
+            return f"{self.updated_at}"
+        
 
 
     @classmethod
@@ -38,17 +50,6 @@ class User:
     def update_user(cls,data):
         query = "UPDATE users SET first_name=%(first_name)s,last_name=%(last_name)s,email=%(email)s WHERE id = %(id)s"
         return connectToMySQL("users_schema").query_db(query,data)
-
-    @classmethod
-    def show(cls,data):
-        query = "SELECT * FROM users WHERE id = %(id)s"
-        return connectToMySQL("users_schema").query_db(query,data)
-
-    @classmethod
-    def show_user(cls,data):
-        query = "SELECT * FROM users WHERE id = %(id)s"
-        user = connectToMySQL("users_schema").query_db(query,data)
-        return cls(user[0])
 
 
         
