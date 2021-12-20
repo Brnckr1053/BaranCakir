@@ -32,6 +32,15 @@
         	<p>Vendor : <c:out value="${book.vendor}"></c:out></p>
         	<p>Amount : <c:out value="${book.amount}"></c:out></p>
         	<p>Description : <c:out value="${book.description}"></c:out></p>
+            <br><br>
+        	<form action="/edit/${book.id}" method="post">
+    			<input type="hidden" name="_method" value="update">
+    			<input class="btn btn-primary" type="submit" value="Update">
+			</form> <br><br>
+		    <form action="/delete/${book.id}" method="post">
+    			<input type="hidden" name="_method" value="delete">
+    			<input class="btn btn-danger" type="submit" value="Delete">
+			</form>
         	
         	
         
