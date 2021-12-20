@@ -27,7 +27,11 @@
 	
 	<br><br><br><br><br><br>
 	<h1>Edit Book</h1><br><br>
-	<a href="/books">Dashboard</a><br><br><br>
+	<a href="/books">Dashboard</a><br><br>
+	<form action="/delete/${book.id}" method="post">
+    		<input type="hidden" name="_method" value="delete">
+    		<input class="btn btn-danger" type="submit" value="Delete">
+	</form><br><br><br>
 	<form:form action="/update/${book.id}" method="post" modelAttribute="book">
 		<input type="hidden" name="_method" value="put">
 	    <p>
