@@ -5,3 +5,4 @@ console.log(a/2);
 a = "hello";
 console.log(a + " hello");
 
+
